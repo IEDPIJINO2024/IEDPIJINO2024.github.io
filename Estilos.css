@@ -1,0 +1,569 @@
+h5{
+    color:#08ccfc;
+}
+
+/* Estilos Primer div */
+.pij {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas o columnas según sea necesario */
+    width: 100%; /* Ancho del contenedor */
+    background-color: hwb(60 97% 1% / 0.735); /* Color de fondo con transparencia */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el logo */
+#logo1 {
+    flex: 0 0 auto; /* Tamaño flexible, no se estira ni se encoge, tamaño automático */
+}
+
+#logo1 img {
+    height: 3cm; /* Altura de la imagen */
+    max-width: 100%; /* Ancho máximo de la imagen */
+}
+
+/* Estilos para el texto */
+.divs {
+    flex: 1 1 auto; /* Tamaño flexible, crece y se encoge según sea necesario */
+    padding: 0 10px; /* Espacio entre el logo y el texto */
+}
+
+h1 {
+    color: rgb(17, 120, 238); /* Color del texto */
+    font-family: 'Times New Roman'; /* Fuente del texto */
+    margin: 0; /* Elimina el margen */
+    font-size: 1.5em; /* Tamaño del texto */
+}
+
+/* Fin */
+
+/* Estilos para el menú de navegación */
+.nav {
+    list-style-type: none; /* Elimina los estilos de lista por defecto */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    background-color: #08ccfc; /* Color de fondo del menú */
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas o columnas según sea necesario */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.nav li {
+    flex: 1; /* Ocupa todo el ancho disponible */
+}
+
+.nav li a {
+    display: block; /* Convierte los elementos de lista en bloques */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 14px 16px; /* Espaciado interno */
+    text-decoration: none; /* Elimina la decoración de subrayado */
+}
+
+.nav li a:hover {
+    background-color: #1810f8; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos Mod1 */
+.mod1 {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas o columnas según sea necesario */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho del contenedor */
+}
+
+.mod2 {
+    flex: 0 1 calc(30% - 10px); /* Tamaño flexible, no se estira ni se encoge, ancho máximo del 30% */
+    margin-right: 0px; /* Espacio entre mod2 y slider */
+}
+
+.slider {
+    flex: 0 1 calc(70% - 10px); /* Tamaño flexible, no se estira ni se encoge, ancho máximo del 70% */
+    margin-left: 0px; /* Espacio entre mod2 y slider */
+    max-height: 370px; /* Altura máxima del slider */
+}
+
+.slider img {
+    width: 100%; /* Ancho máximo de la imagen dentro del slider */
+    height: auto; /* Altura automática */
+}
+
+.mod21, .mod22, .mod23 {
+    border-style: outset; /* Estilo de borde */
+    margin-top: 5px; /* Margen superior */
+    padding: 10px; /* Espaciado interno */
+    flex: 1 1 100%; /* Tamaño flexible, crece y se encoge según sea necesario */
+}
+
+h2 {
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para las redes sociales */
+.redes {
+    display: inline; /* Muestra las redes sociales en línea */
+    height: 5cm; /* Altura de las redes sociales */
+}
+
+/* Estilos para la barra de navegación número 1 */
+.nav1 {
+    list-style-type: none; /* Elimina los estilos de lista por defecto */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    background-color: #112eea; /* Color de fondo de la barra de navegación */
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin-top: 0; /* Margen superior */
+}
+
+.nav1 li {
+    margin: 0 10px; /* Margen izquierdo y derecho */
+}
+
+.nav1 li img {
+    height: 50px; /* Altura de las imágenes */
+    width: 50px; /* Ancho de las imágenes */
+    display: block; /* Convierte las imágenes en bloques */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mod2, .slider {
+        flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos más pequeños */
+        margin: 0; /* Elimina el margen */
+        margin-top:0; /* Añade un poco de espacio entre los elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Tamaño del texto */
+    }
+    .nav li a {
+        padding: 10px; /* Espaciado interno */
+    }
+    .slider {
+        height: auto; /* Altura automática */
+    }
+    .mod21, .mod22 .mod23 {
+        padding: 5px; /* Espaciado interno */
+    }
+    .nav1 li img {
+        height: 40px; /* Altura de las imágenes */
+        width: 40px; /* Ancho de las imágenes */
+    }
+}
+
+body {
+    background-color: #f5f5f5; /* Color de fondo del cuerpo */
+}
+
+/* Configuración del cuadro de diapositivas */
+.slideshow-container {
+    max-width: 100%; /* Asegura que el contenedor del slider no exceda el ancho del viewport */
+    position: relative; /* Posición relativa para los elementos hijos */
+    max-height: 400px; /* Altura máxima del contenedor del slideshow */
+    margin: auto; /* Centra el contenedor en la página */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    margin-top: 10px;
+}
+
+.slideshow-container img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+}
+
+.slideshow-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Indica a la imagen que se ajuste dentro del contenedor sin distorsionarse, recortando si es necesario */
+}
+
+/* Oculta las imágenes por defecto */
+.mySlides {
+    display: none; /* Oculta las diapositivas por defecto */
+}
+
+/* Botones de siguiente y anterior */
+.prev, .next {
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Posicionamiento en la mitad superior del contenedor */
+    width: auto; /* Ancho automático según el contenido */
+    margin-top: -22px; /* Ajusta el margen superior */
+    padding: 16px; /* Añade relleno al botón */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+    font-size: 18px; /* Tamaño de la fuente */
+    transition: 0.6s ease; /* Efecto de transición */
+    border-radius: 0 3px 3px 0; /* Estilo de los bordes */
+    user-select: none; /* Evita la selección de texto */
+}
+
+/* Posiciona el botón "siguiente" a la derecha */
+.next {
+    right: 0; /* Posiciona el botón a la derecha */
+    border-radius: 3px 0 0 3px; /* Estilo de los bordes */
+}
+
+/* Al pasar el mouse, agrega un color de fondo negro con algo de transparencia */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con transparencia */
+}
+
+/* Texto de la leyenda */
+.text {
+    color: #f2f2f2; /* Color del texto */
+    font-size: 15px; /* Tamaño de la fuente */
+    padding: 8px 12px; /* Añade relleno al texto */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 8px; /* Posiciona el texto en la parte inferior */
+    width: 100%; /* Ancho del texto */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Texto del número (1/3 etc) */
+.numbertext {
+    color: #f2f2f2; /* Color del texto */
+    font-size: 12px; /* Tamaño de la fuente */
+    padding: 8px 12px; /* Añade relleno al texto */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Posiciona el texto en la parte superior */
+}
+
+/* Los puntos/balas/indicadores */
+.dot {
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    height: 15px; /* Altura de los puntos */
+    width: 15px; /* Ancho de los puntos */
+    margin: 0 2px; /* Margen entre los puntos */
+    background-color: #bbb; /* Color de fondo de los puntos */
+    border-radius: 50%; /* Borde redondeado */
+    display: inline-block; /* Muestra los puntos en línea */
+    transition: background-color 0.6s ease; /* Efecto de transición */
+}
+
+/* Marca activa o puntos al pasar el mouse */
+.active, .dot:hover {
+    background-color: #717171; /* Color de fondo cuando está activo o al pasar el mouse */
+}
+
+/* Animación de desvanecimiento */
+.fade {
+    animation-name: fade; /* Nombre de la animación */
+    animation-duration: 1.5s; /* Duración de la animación */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fade {
+    from {opacity: .4} /* Opacidad inicial */
+    to {opacity: 1} /* Opacidad final */
+}
+
+/* Estilos Barra navegacion numero 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+.nav {
+    list-style: none;
+    background-color: #0871e9;
+    padding: 0;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav a {
+    display: block;
+    padding:10px 20px;
+    color: white;
+    text-decoration:none;
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Ajusta la distancia desde la parte superior */
+    left: 0;
+    background-color: #028cf5a0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999; /* Asegura que el menú desplegable esté sobre otros elementos */
+}
+.nav ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav ul li {
+    width: 200px;
+}
+
+.nav a:hover {
+    background-color: #0056b3;
+}
+
+.active a {
+    background-color: #0056b3;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    padding: 10px 20px;
+    background-color: #0871e9;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav li {
+        display: block;
+        width: 100%;
+    }
+    .nav ul {
+        position: static;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+.nav {
+    list-style: none;
+    background-color: #0871e9;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+}
+
+.nav li {
+    position: relative;
+    margin: 0;
+}
+
+.nav > li {
+    display:grid;
+}
+
+.nav a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #028cf5a0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+ /*Estilos cuadro rector */
+
+
+.mod24 img {
+    height: 200px; /* Altura de la imagen */
+    width: auto; /* Ancho automático para mantener la proporción */
+    max-width: 100%; /* Ancho máximo de la imagen */
+    margin-top: 10px; /* Espacio superior */
+    text-align: center;
+    
+}
+/* Animación de cambio de color */
+@keyframes cambioColor {
+    0% {
+        background-color: #0077ff; /* Color inicial: dorado */
+    }
+    50% {
+        background-color: #ffcc00; /* Color intermedio */
+    }
+    100% {
+        background-color: #ffffff; /* Color final: dorado */
+    }
+}
+
+/* Animación de borde */
+@keyframes animacionBorde {
+    0% {
+        border-color: #1178ff; /* Color inicial del borde: dorado */
+    }
+    50% {
+        border-color: #1581ce; /* Color intermedio del borde */
+    }
+    100% {
+        border-color: hsl(126, 91%, 50%); /* Color final del borde: dorado */
+    }
+}
+
+/* Aplicar animaciones al contenedor mod24 */
+.mod24{
+    margin:20px;
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 1200px; /* Altura deseada para el div */
+    text-align: center;
+    width:auto; /* Ancho automático */
+    position: relative; /* Posicionamiento relativo para elementos secundarios */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+ 
+}
+.mod27{
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 300px; /* Altura deseada para el div */
+    border-style:outset; /* Estilo de borde */
+    text-align: center;
+    background-image:url(/IMAGENES/logo\ -\ copia.png);
+    background-position: center;
+    background-size: 100px;
+    width:auto; /* Ancho automático */
+    position: relative; /* Posicionamiento relativo para elementos secundarios */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    animation: cambioColor 4s linear infinite; /* Aplica la animación de cambio de color */
+    border-width: 2px; /* Ancho del borde */
+    border-color: #ffd700; /* Color inicial del borde */
+    animation: animacionBorde 4s linear infinite; /* Aplica la animación de borde */
+}
+.mod25, .mod26{
+    margin: 30px;
+}
+.mod26{
+    margin-left:180px;
+    text-align:center;
+    
+}
+.mod28{
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 300px; /* Altura deseada para el div */
+    text-align: center;
+    width:auto; /* Ancho automático */
+    position: relative; /* Posicionamiento relativo para elementos secundarios */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    background-color:#ffffff;
+    margin-top: 10px;
+}
+.mod29, .mod30{
+    margin: auto;
+}
+.mod31{
+    margin:auto ;
+}
+.mod32{
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100px; /* Altura deseada para el div */
+    text-align: center;
+    width:auto; /* Ancho automático */
+    position: relative; /* Posicionamiento relativo para elementos secundarios */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    background-color:#ffffff;
+    margin-top: 10px;
+
+}
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 480px) {
+    .mod24 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 100%;
+        margin: 20px 0; /* Aumenta el espacio entre los elementos */
+        padding: 10px; /* Añade relleno interno */
+        display: flex; /* Utiliza flexbox */
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+    .mod25 {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        margin: 10px 0; /* Añade espacio entre los elementos */
+    }
+    .mod26 {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        margin: 10px 0; /* Añade espacio entre los elementos */
+    }
+}
+.nav1 h2, h4, h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+
+}
+button{
+    background:#112eea;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:auto;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: auto;
+    border-radius: 25px;
+  }
+  button:hover{
+    background:#fff;
+    color:#112eea;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background:#112eea;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+
